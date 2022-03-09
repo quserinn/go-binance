@@ -68,6 +68,9 @@ type FuturesTransferType int
 // TransactionType define transaction type
 type TransactionType string
 
+// IsolatedMarginTransferType define isolted margin transfer type
+type IsolatedMarginTransferType string
+
 // Endpoints
 const (
 	baseAPIMainURL    = "https://api.binance.com"
@@ -159,6 +162,9 @@ const (
 	timestampKey  = "timestamp"
 	signatureKey  = "signature"
 	recvWindowKey = "recvWindow"
+
+	IsolatedMarginTranferSpot           IsolatedMarginTransferType = "SPOT"
+	IsolatedMarginTarnferIsolatedMargin IsolatedMarginTransferType = "ISOLATED_MARGIN"
 )
 
 func currentTimestamp() int64 {
